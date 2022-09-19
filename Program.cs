@@ -2,7 +2,12 @@
 // Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма.
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
-
+string[] Array;
+Console.WriteLine("Введите массив строк через пробел");
+string ArrString = Console.ReadLine();
+Array = ArrString.Split(' ');
+var result = new string[Array.Length];
+var index = 0;
 for (int i = 0; i < Array.Length; i++)
 {
     if (Array[i].Length <= 3)
